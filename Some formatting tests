@@ -1,0 +1,34 @@
+
+producto = input("agregue producto: \n ")
+precio = float(input("agregue precio: "))
+cantidad = float(input("introduzca Kg: "))
+
+print ("Compra: {producto}, cantidad: {cantidad}Kg x ${precio} = {total}".format(producto = producto, precio = round(precio,2), cantidad = cantidad, total = round(cantidad*precio,2)))
+
+n = producto + ", " + str(precio) + ", " + str(cantidad)
+
+print (n)
+
+print ("producto: {producto:20s}, precio: {precio}, calidad {x}".format(producto = producto, precio = precio, x = "de primera"))
+print ("producto: {producto:<10}, precio: {precio:^10}, calidad {x:>10}".format(producto = producto, precio = precio, x = "de primera"))
+
+for x in range(1, 11):
+    print('{0:2d} {1:3d} {2:4d}'.format(x, x*x, x*x*x))
+         
+print ("the story of {0}, {1} and {2}". format("Frankie", "Bill", "Murray"))
+
+Nombre = input(str("Ingresa tu nombre \n")) #Solicitamos datos de entrada
+print ("Tu nombre es {0}".format(Nombre)) #Formateamos la salida
+
+a = "abra"
+b = "cad"
+
+print ("ahora la magia {0} {1} {0}".format (a,b))
+print ("ahora la magia {0:<5} {1:^5} {0:>5}".format (a,b))  #<5 alinea 5 espacios a a izquierda, ^5 centrado a 5 espacios, >5 a la derecha a 5 espacios
+
+
+for z in range (1,12):
+    print("{3}{0:2d}{3}    {3}{1:3d}{3}   {3}{2:4d}{3}".format(z, z*z, z*z*z,"|"))
+
+    # OJO: 2d quiere decir que se dejan dos espacios para el siguiente caracate, eso en enteros
+    # para un string, se usa "s" por ejemplo :20s   asi habran 20 espacios antes del siguiente caracter
